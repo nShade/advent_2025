@@ -24,7 +24,7 @@ def change_position(initial, direction, clicks):
     >>> change_position(0, "R", 1)
     (1, 0)
     """
-    if direction == "L": # 0, L, 1
+    if direction == "L":
         return (initial - clicks)%100, abs(((100 - initial)%100 + clicks)//100)
     if direction == "R": 
         return (initial + clicks)%100, abs((initial + clicks)//100)
